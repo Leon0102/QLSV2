@@ -63,7 +63,7 @@ namespace WF_BT2.BLL
         }
         public bool CheckMSSV(SV s1, SV s2)
         {
-            if(Convert.ToInt32(s1.MSSV)<Convert.ToInt32(s2.MSSV))
+            if(Convert.ToInt32(s1.MSSV)>Convert.ToInt32(s2.MSSV))
             {
                 return true;
             }
