@@ -1,0 +1,11 @@
+C:\Users\DeLLXPS\source\repos\WF_BT2\bin\Debug\WF_BT2.exe.config
+C:\Users\DeLLXPS\source\repos\WF_BT2\bin\Debug\WF_BT2.exe
+C:\Users\DeLLXPS\source\repos\WF_BT2\bin\Debug\WF_BT2.pdb
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.csprojAssemblyReference.cache
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.Properties.Resources.resources
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.csproj.GenerateResource.cache
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.csproj.CoreCompileInputs.cache
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.exe
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.pdb
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.DSSV.resources
+C:\Users\DeLLXPS\source\repos\WF_BT2\obj\Debug\WF_BT2.GUI.TTSV.resources
