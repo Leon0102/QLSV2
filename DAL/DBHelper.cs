@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace WF_BT2
 {
@@ -18,7 +19,8 @@ namespace WF_BT2
             {
                 if(_Instance==null)
                 {
-                    string cnnstr = @"Data Source=DESKTOP-4GRVFSF\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True";
+                    //string cnnstr = @"Data Source=DESKTOP-4GRVFSF\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True";
+                    string cnnstr = ConfigurationManager.ConnectionStrings["Conn"].ConnectionString;
                     _Instance = new DBHelper(cnnstr);
                 }
                 return _Instance;
