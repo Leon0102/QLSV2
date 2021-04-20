@@ -9,6 +9,7 @@ using WF_BT2.DTO;
 
 namespace WF_BT2.BLL
 {
+    public delegate bool MyCompare(object o1, object o2);
     class BLL_QLSV
     {
         public List<SV> GetListSV_BLL()
@@ -60,16 +61,8 @@ namespace WF_BT2.BLL
                 data.Add(dal.GetSVByMSSV(i));
             }
             return data;
-        }
-        public bool CheckMSSV(SV s1, SV s2)
-        {
-            if(Convert.ToInt32(s1.MSSV)>Convert.ToInt32(s2.MSSV))
-            {
-                return true;
-            }
-            return false;
-        }
-        public List<SV> ListSVSort(List<string> ms)
+        }        
+        public List<SV> ListSVSort(List<string> ms, MyCompare cmp)
         {
             DAL_QLSV dal = new DAL_QLSV();
             List<SV> data = dal.GetListSV_DAL();
@@ -77,7 +70,7 @@ namespace WF_BT2.BLL
             {
                 for (int j = i + 1; j < data.Count; ++j)
                 {
-                        if(CheckMSSV( data[i],data[j]))
+                        if(cmp( data[i],data[j]))
                         { 
                         SV temp = data[i];
                         data[i] = data[j];

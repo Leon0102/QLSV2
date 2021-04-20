@@ -154,7 +154,24 @@ namespace WF_BT2
             {
                 LMMS.Add(i.MSSV);
             }
-            dtgSV.DataSource = bll.ListSVSort(LMMS);
+            switch (cbbSort.Text)
+            {
+                case "Tên, A->Z":
+                    dtgSV.DataSource = bll.ListSVSort(LMMS, SV.Compare_NameAZ);
+                    break;
+                case "Tên, Z->A":
+                    dtgSV.DataSource = bll.ListSVSort(LMMS, SV.Compare_NameZA);
+                    break;
+                case "MSSV, Thấp -> Cao":
+                    dtgSV.DataSource = bll.ListSVSort(LMMS, SV.Compare_MSSVThapCao);
+                    break;
+                case "MSSV, Cao -> Thấp":
+                    dtgSV.DataSource = bll.ListSVSort(LMMS, SV.Compare_MSSVCaoThap);
+                    break;
+                default:
+                    break;
+            }
+            
             
 
         }

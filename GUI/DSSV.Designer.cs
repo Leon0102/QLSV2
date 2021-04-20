@@ -118,6 +118,11 @@
             // cbbSort
             // 
             this.cbbSort.FormattingEnabled = true;
+            this.cbbSort.Items.AddRange(new object[] {
+            "MSSV, Thấp -> Cao",
+            "MSSV, Cao -> Thấp",
+            "Tên, A->Z",
+            "Tên, Z->A"});
             this.cbbSort.Location = new System.Drawing.Point(867, 454);
             this.cbbSort.Name = "cbbSort";
             this.cbbSort.Size = new System.Drawing.Size(172, 24);
